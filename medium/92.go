@@ -8,7 +8,7 @@ func reverseBetween(head *ListNode, m int, n int) *ListNode {
 	//         5->4->3
 	// 1 -> 2           6->7
 	// ^    ^           ^
-	// head tail        current
+	// list tail        current
 
 	if m == n {
 		return head

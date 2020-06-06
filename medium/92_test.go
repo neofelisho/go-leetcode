@@ -23,8 +23,8 @@ func Test_reverseBetween(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			head := GetList(tt.args.list)
-			expected := GetList(tt.want)
+			head := GetListHead(tt.args.list)
+			expected := GetListHead(tt.want)
 			if got := reverseBetween(head, tt.args.m, tt.args.n); !reflect.DeepEqual(got, expected) {
 				t.Errorf("reverseBetween() = %v, want %v", got, tt.want)
 			}

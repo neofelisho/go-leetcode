@@ -5,7 +5,10 @@ type ListNode struct {
 	Next *ListNode
 }
 
-func GetList(list []int) *ListNode {
+func GetListHead(list []int) *ListNode {
+	if len(list) == 0 {
+		return nil
+	}
 	head := &ListNode{list[0], nil}
 	curr := head
 	for i := 1; i < len(list); i++ {
